@@ -1,6 +1,9 @@
 <?php
-
+/**
+ * Begin session
+ */
 session_start();
+
 
 /**
  * Error reporting switch
@@ -55,6 +58,7 @@ switch ($_SERVER['REQUEST_URI']){
         }
         break;
 }
+
 
 /*
  * Close any open mysqli connections
