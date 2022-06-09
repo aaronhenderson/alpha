@@ -29,7 +29,7 @@ class Template
         $template_path = self::TEMPLATE_DIRECTORY . $template;
 
         if(false === file_exists($template_path)){
-            throw new Exception('Template not found with path: "' . $template_path . '".');
+            throw new \Exception\NotFoundException('Template not found with path: "' . $template_path . '".');
         }
     
         $this->html = file_get_contents($template_path);
